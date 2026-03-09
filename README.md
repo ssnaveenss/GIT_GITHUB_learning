@@ -7,15 +7,15 @@ branching, merging, and pull requests**.
 
 # Table of Contents
 
-1.  Git Identity Setup\
-2.  Git Architecture (Workflow Components)\
-3.  Initial Repository Setup\
-4.  Fundamental Git Commands\
-5.  Branching Workflow\
-6.  Merge vs Pull Request\
-7.  Merge Conflicts\
-8.  Best Practices\
-9.  Git Workflow Summary
+1. [Git Identity Setup](#1-git-identity-setup)  
+2. [Git Architecture (Workflow Components)](#2-git-architecture-workflow-components)  
+3. [Initial Repository Setup](#3-initial-repository-setup)  
+4. [Fundamental Git Commands](#4-fundamental-git-commands)  
+5. [Branching Workflow](#5-branching-workflow)  
+6. [Merge vs Pull Request](#6-merge-vs-pull-request)  
+7. [Merge Conflicts](#7-merge-conflicts)  
+8. [Best Practices](#8-best-practices)  
+9. [Git Workflow Summary](#9-git-workflow-summary)
 
 ------------------------------------------------------------------------
 
@@ -106,26 +106,26 @@ git pull
 
 # 4. Fundamental Git Commands
 
-  Command                   Description
-  ------------------------- --------------------------------
-  `git init`                Initialize a Git repository
-  `git clone <url>`         Copy a remote repository
-  `git status`              Show file states
-  `git add <file>`          Stage a file
-  `git add .`               Stage all changes
-  `git commit -m "msg"`     Save staged changes
-  `git log`                 View commit history
-  `git diff`                Show code differences
-  `git branch`              List branches
-  `git branch <name>`       Create branch
-  `git switch <branch>`     Switch branch
-  `git checkout <branch>`   Older branch switch command
-  `git merge <branch>`      Merge branch
-  `git remote -v`           Show remote repositories
-  `git push`                Upload commits
-  `git pull`                Fetch and merge remote updates
-  `git fetch`               Download remote changes
-  `git reset`               Undo staging or commits
+| Command | Description |
+|--------|-------------|
+| `git init` | Initialize a Git repository |
+| `git clone <url>` | Copy a remote repository |
+| `git status` | Show file states |
+| `git add <file>` | Stage a file |
+| `git add .` | Stage all changes |
+| `git commit -m "msg"` | Save staged changes |
+| `git log` | View commit history |
+| `git diff` | Show code differences |
+| `git branch` | List branches |
+| `git branch <name>` | Create branch |
+| `git switch <branch>` | Switch branch |
+| `git checkout <branch>` | Older branch switch command |
+| `git merge <branch>` | Merge branch |
+| `git remote -v` | Show remote repositories |
+| `git push` | Upload commits |
+| `git pull` | Fetch and merge remote updates |
+| `git fetch` | Download remote changes |
+| `git reset` | Undo staging or commits |
 
 ------------------------------------------------------------------------
 
