@@ -1,2 +1,8 @@
-Setting the user name : git config --global user.name "Naveen S S"
-Setting the gmail     : git config --global user.email "ssnaveen696@gmail.com"
+Setting the git user name : git config --global user.name "Naveen S S"
+Setting the git gmail     : git config --global user.email "ssnaveen696@gmail.com"
+
+Git Workflow Components (Git Architecture): 
+1. Working Directory – The project folder where you create and modify files before Git tracks them (seen in VS Code).
+2. Staging Area (Index) – The temporary area where selected changes are prepared for the next commit using commands like [ git add ].
+3. Local Repository – The Git database stored in the .git folder on your computer where commits are saved, usually on a branch like main.
+4. Remote Repository –The online repository (GitHub) connected to your local repo via a remote name like origin, containing branches such as origin/main.
