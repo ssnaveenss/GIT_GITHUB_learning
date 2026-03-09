@@ -6,3 +6,34 @@ Git Workflow Components (Git Architecture):
 2. Staging Area (Index) – The temporary area where selected changes are prepared for the next commit using commands like [ git add ].
 3. Local Repository – The Git database stored in the .git folder on your computer where commits are saved, usually on a branch like main.
 4. Remote Repository –The online repository (GitHub) connected to your local repo via a remote name like origin, containing branches such as origin/main.
+
+Often Used Git setup Command:
+echo "# GIT_GITHUB_learning" >> README.md : Creates a README.md file and writes the project title into it.
+git init : Initializes a new Git repository by creating the hidden .git directory.
+git add README.md : Adds the README.md file to the staging area for the next commit.
+git commit -m "first commit" : Saves the staged changes as the first commit in the local repository.
+git branch -M main : Renames the current branch to main (force rename if needed).
+git remote add origin https://github.com/ssnaveenss/GIT_GITHUB_learning.git : Connects the local repository(aka main) to the GitHub repository(aka remote repo) named origin.
+git push -u origin main : Pushes the local main branch to the remote repository (origin) and sets origin/main as the *upstream* so future pushes and pulls can be done simply using [ git push or git pull ] without specifying origin and main again.
+
+Fundamental Git Commands:
+1. git init : Initializes a new Git repository by creating the .git folder.
+2. git clone <repo_url> : Creates a local copy of an existing remote repository.
+3. git status : Shows the current state of files (modified, staged, untracked).
+4. git add <file> : Adds a specific file to the staging area.
+5. git add . : Adds all modified and new files to the staging area.
+6. git commit -m "message" : Saves staged changes as a commit in the local repository.
+7. git log : Displays the history of commits.
+8. git diff : Shows differences between file changes and the last commit.
+9. git branch : Lists all branches in the repository.
+10. git branch <branch_name> : Creates a new branch.
+11. git switch <branch_name> : Switches to another branch.
+12. git checkout <branch_name> : Switches branches or restores files (older command).
+13. git merge <branch_name> : Combines another branch into the current branch.
+14. git remote -v : Displays the remote repositories connected to the project.
+15. git remote add origin <repo_url> : Links the local repository to a remote repository.
+16. git push : Uploads commits from the local repository to the remote repository.
+17. git push -u origin main : Pushes the branch and sets upstream tracking.
+18. git pull : Fetches and merges updates from the remote repository.
+19. git fetch : Downloads updates from the remote repository without merging.
+20. git reset : Unstages files or moves the repository to a previous commit.
