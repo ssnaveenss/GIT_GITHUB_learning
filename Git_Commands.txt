@@ -37,3 +37,46 @@ Fundamental Git Commands:
 18. git pull : Fetches and merges updates from the remote repository.
 19. git fetch : Downloads updates from the remote repository without merging.
 20. git reset : Unstages files or moves the repository to a previous commit.
+
+Branching and merging the branches:
+(GIT BRANCH → WORK → MERGE WORKFLOW)
+
+STEP 1 — Check current branch
+git branch
+: Lists all branches and shows the current active branch.
+
+STEP 2 — Create a new branch
+git branch Branch-1
+: Creates a new branch named Branch-1 from the current branch.
+
+STEP 3 — Switch to the new branch
+git switch Branch-1
+: Moves your working environment to Branch-1.
+
+STEP 4 — Make changes in the branch
+(edit files in VS Code)
+: Modify or create files for the new feature.
+
+STEP 5 — Stage the changes
+git add .
+: Adds all modified files to the staging area.
+
+STEP 6 — Commit the changes
+git commit -m "Added feature in Branch-1"
+: Saves the changes in Branch-1.
+
+STEP 7 — Push the branch to GitHub
+git push -u origin Branch-1
+: Uploads Branch-1 to the remote repository and sets upstream tracking.
+
+STEP 8 — Switch back to main branch
+git switch main
+: Returns to the main branch.
+
+STEP 9 — Merge the feature branch
+git merge Branch-1
+: Combines changes from Branch-1 into main.
+
+STEP 10 — Push updated main branch
+git push
+: Uploads the merged changes to GitHub.
