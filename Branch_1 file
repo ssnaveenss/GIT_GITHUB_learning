@@ -1,6 +1,12 @@
 Hey this file is intially created in Git Branch-1,
 So now its only visible in Branch-1, it wont be visible in "main"
 
+Adding files and pushing to Branch_1:
+git checkout Branch_1 (change the current working Branch from main to Branch_1)
+(add the "Branch_1 file" and add content to it)
+git add .
+git commit -m "file created in Branch_1
+git push origin Branch_1 (to reflect in the remote repo)
 
 REMOTE REPOSITORY (GitHub)
 origin
@@ -8,3 +14,18 @@ origin
 ├── origin/main (All existing files ONLY)
 │
 └── origin/Branch-1  (All existing files + Branch_1 file is visible as it is created here)
+
+--- NOW this file present in Branch_1 is going to be merged to main branch
+DONE
+
+
+--------------------------------------------------------------------------------------------
+Merging Branch_1 with main:
+
+git checkout main (switching to main for merging main and Branch_1)
+git diff Branch_1 (compares the Branch_1 with main and shows the modifications)
+git merge Branch_1
+
+"Branch_1 file" added from Branch_1 to main succesfully. 
+
+

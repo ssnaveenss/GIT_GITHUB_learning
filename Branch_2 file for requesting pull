@@ -1,0 +1,67 @@
+Merge :
+Local command used to combine branches directly.
+
+Pull Request :
+GitHub feature used to review and approve changes before merging.
+
+---------------------------------------------------------------------------------
+MERGE vs PULL REQUEST WORKFLOW
+
+1. MERGE (Local Git)
+
+When used :
+Used when the developer has direct access to the repository and wants to combine branches locally without review.
+
+Procedure :
+Step 1 : Switch to the target branch
+git switch main : Moves to the main branch where changes will be merged.
+
+Step 2 : Merge the feature branch
+git merge Branch_1 : Combines the commits from Branch_1 into main.
+
+Step 3 : Push the merged branch
+git push : Uploads the updated main branch to GitHub.
+
+Diagram :
+
+Before merge
+
+main
+ │
+ ├── commit A
+ │
+ └── Branch_1
+       ├── commit B
+       └── commit C
+
+
+After merge
+
+main
+ │
+ ├── commit A
+ ├── commit B
+ └── commit C
+
+2. PULL REQUEST (GitHub)
+
+When used :
+Used when code review is required before merging changes, commonly in team projects.
+
+Procedure :
+
+Step 1 : Create and push the branch
+git switch Branch_2
+git push origin Branch_2
+: Uploads the feature branch to GitHub.
+
+Step 2 : Open GitHub repository
+: Navigate to the repository page on GitHub.
+
+Step 3 : Create Pull Request
+Base branch : main
+Compare branch : Branch_2
+Click "Create Pull Request".
+
+Step 4 : Review and merge
+Maintainers review the changes and click "Merge Pull Request".
