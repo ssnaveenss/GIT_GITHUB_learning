@@ -1,0 +1,10 @@
+Hey this file is intially created in Git Branch-1,
+So now its only visible in Branch-1, it wont be visible in "main"
+
+
+REMOTE REPOSITORY (GitHub)
+origin
+│
+├── origin/main (All existing files ONLY)
+│
+└── origin/Branch-1  (All existing files + Branch_1 file is visible as it is created here)
