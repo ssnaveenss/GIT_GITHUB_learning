@@ -1,0 +1,10 @@
+This file is created directly in GIITHUB -> Add File option.
+
+GOAL : Sync the remote repo (origin) with the local repo (main) in vs code
+
+Inorder to get the files/ modification from the github (ie. If a collaborator has modified a feature, and u want the feature
+to reflect in OUR local repo , we need to pull remote repo)
+
+Solution:
+>> git pull
+(in local repo: ie VS CODE terminal)
